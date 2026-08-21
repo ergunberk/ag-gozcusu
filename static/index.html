@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ağ Gözcüsü</title><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/devices.css">
+</head>
+<body>
+  <aside><div class="logo"><span>◉</span> Ağ Gözcüsü</div><nav><a href="#overview" data-page="overview" class="active">Genel Bakış</a><a href="#devices" data-page="devices">Cihazlar</a><a class="disabled">Geçmiş</a><a class="disabled">Ayarlar</a></nav><div class="router"><i id="dot"></i><div><small>TD-W9970 V3</small><strong id="connection">Bağlanıyor</strong></div></div></aside>
+  <main>
+    <header><div><p class="eyebrow">YEREL AĞ İZLEME</p><h1 id="pageTitle">Genel Bakış</h1></div><div class="live"><i></i> CANLI</div></header>
+    <section id="notice" class="notice hidden"></section>
+    <section class="stats overview-only">
+      <article class="stat"><div class="icon down">↕</div><div><small>ANLIK TOPLAM TRAFİK</small><strong id="traffic">0.00</strong><span>Mbps</span></div></article>
+      <article class="stat"><div class="icon up">Σ</div><div><small>TOPLAM KULLANIM</small><strong id="total">0</strong><span></span></div></article>
+      <article class="stat"><div class="icon devices">⌁</div><div><small>İZLENEN CİHAZ</small><strong id="online">0</strong><span>cihaz</span></div></article>
+    </section>
+    <section class="chart-card overview-only"><div class="section-head"><div><h2>Canlı Trafik</h2><p>Son 60 saniyenin toplam ağ kullanımı</p></div><span id="mode">DEMO</span></div><canvas id="chart" width="1100" height="260"></canvas></section>
+    <section class="device-card"><div class="section-head"><div><h2 id="deviceTitle">İzlenen Cihazlar</h2><p id="deviceSubtitle">TD-W9970 birleşik trafik sayaçları</p></div><span id="updated">—</span></div><div class="table"><div class="tr th"><span>CİHAZ ADI</span><span>IP / MAC</span><span>ANLIK TRAFİK</span><span>PAKET</span><span>TOPLAM</span></div><div id="rows"></div></div></section>
+  </main><script src="/static/app.js"></script>
+</body></html>

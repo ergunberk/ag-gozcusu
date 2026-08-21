@@ -1,0 +1,8 @@
+nav a[data-page] { cursor: pointer; }
+nav a.disabled { opacity: .45; cursor: default; }
+.name-editor { display: flex; gap: 6px; align-items: center; }
+.name-editor input { width: 130px; background: #09141d; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 7px 8px; font: inherit; }
+.name-editor button { border: 1px solid #1c5a58; background: #103738; color: var(--cyan); border-radius: 6px; padding: 7px 9px; cursor: pointer; }
+.devices-page .overview-only { display: none; }
+.devices-page .device-card { margin-top: 0; }
+
