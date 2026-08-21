@@ -6,7 +6,7 @@ TP-Link TD-W9970 V3 modem üzerindeki cihazları ve anlık ağ kullanımını ye
 
 - Ağa bağlı cihazları IP ve MAC adresleriyle listeler.
 - Trafik kullanımını WebSocket üzerinden canlı günceller.
-- Cihazlara `BERK-PC`, `Salon TV` gibi kalıcı ve anlaşılır isimler vermeyi sağlar.
+- Cihazlara `Bilgisayar`, `Salon TV` gibi kalıcı ve anlaşılır isimler vermeyi sağlar.
 - Toplam trafik, çevrimiçi cihaz sayısı ve cihaz bazlı kullanım bilgilerini gösterir.
 - Modeme bağlanmadan arayüzü denemek için örnek veri modu içerir.
 - Modem parolasını yalnızca yerel `.env` dosyasında tutar.
@@ -56,7 +56,6 @@ ROUTER_PASSWORD=modem_paneli_parolaniz
 POLL_INTERVAL=5
 ```
 
-Modem panelindeki trafik istatistiklerinin etkin olması gerekir. `.env` dosyası Git tarafından dışlanır; gerçek parolanızı hiçbir zaman GitHub'a yüklemeyin.
 
 ## Testler
 
@@ -74,10 +73,3 @@ tests/               Otomatik testler
 requirements.txt     Python bağımlılıkları
 ```
 
-## Gizlilik
-
-Uygulama yerel ağınızda çalışır. Modem giriş bilgileri, keşfedilen cihazlara verdiğiniz özel isimler ve çalışma sırasında oluşan yerel veriler repository'ye dahil edilmez.
-
-## Lisans
-
-Bu proje [MIT Lisansı](LICENSE) ile sunulmaktadır.
